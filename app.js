@@ -46,6 +46,6 @@ app.post("/work/", function(req, res){
     workItems.push(item)
 })
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log("Server started");
 });
